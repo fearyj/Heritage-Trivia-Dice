@@ -1,0 +1,79 @@
+/* Reset basic styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background: linear-gradient(to left, #B399DD, #B399DD); /* Your background gradient */
+    font-family: "Sevillana", cursive;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Berkshire Swash", serif;
+    font-weight: 100;
+    font-size: 2.8rem;
+    color: #FFFFFF; /* White text */
+    text-shadow: 0 0 10px #781CE3,  /* Light purple glow */
+                 0 0 20px #781CE3, /* Additional glow */
+                 0 0 30px #781CE3, /* More intense glow */
+                 0 0 40px #781CE3, /* Spread the glow further */
+                 0 0 50px #781CE3; /* Final touch for a strong glow */
+    margin-bottom: 20px; /* Space between the text and the dice */
+}
+.dice-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust gap between dice as needed */
+}
+
+.photos {
+    border-radius: 30px;
+    box-shadow: 0px 5px 5px #FFFFFF; /* White shadow for the dice image */
+    max-width: 200px; /* Set a fixed width to keep the dice images consistent */
+    margin-bottom: 20px; /* Space between the dice and the button */
+}
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #FFFFFF; 
+    color: black; 
+    border-radius: 15px;
+    border: 1px solid #FFD700; /* Gold border */
+    box-shadow: 0px 2px 5px #FFD700; /* Gold box shadow */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    color: black;
+    background-color: #FFD700;
+    box-shadow: 0px 2px 5px #FFD700; /* Maintain the shadow during hover */
+}
+
+/* Additional styles for a clean layout */
+.textDisplay {
+    height: 200px;
+    background-color: #B399DD; /* Set background color */
+}
+
+.title, .actionButton {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
